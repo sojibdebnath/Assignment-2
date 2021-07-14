@@ -7,6 +7,14 @@ body{
     background:  #000000;
     margin: 0px;
 }
+/* common styles or utulities */
+
+.container{
+    background-color: #FFFFFF;
+    width: 1440px;
+    padding-top: 30px;
+    margin-top: 0px;
+}
 
 
 /* header style  */
@@ -61,14 +69,7 @@ body{
     height: 438px;
     color: #FFFF;
 }
-/* common styles or utulities */
 
-.container{
-    background-color: #FFFFFF;
-    width: 1440px;
-    padding-top: 30px;
-    margin-top: 0px;
-}
 
 /*----------------
  All Player Style 
@@ -136,11 +137,19 @@ text-align: center;
 
 }
 .partner{
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 60px;
-    padding-right: 60px;
+    
 
+}
+.partner img{
+    width: 80px;
+    height:80px;
+    padding-left: 150px;
+    padding-right: 60px;
+    margin: auto;
+    
 }
 
 /* -----------------
@@ -182,6 +191,9 @@ text-align: center;
 
 /* Moblile Devices */
 @media only screen and (max-width:688px){
+    .container{
+        width:100%;
+    }
     .top-banner{
         height: 100%;
         width: 100%;
@@ -200,14 +212,53 @@ text-align: center;
         justify-content: center;
         grid-template-columns: repeat(1, 1fr);
     }
+    .partner{
+        width: 100%;
+        display: grid;
+        align-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .footer-adding{
-        
+        width: 100%;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(1, 1fr);
         
     }
     logo{
-        padding-left: 10px;
+        width: 100%;
+    }
+}
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .top-banner{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .players{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .partner{
+        width: 100%;
+        display: grid;
+        align-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-adding{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    logo{
+        width: 100%;
     }
 }
