@@ -110,7 +110,7 @@ text-align: center;
 .top-clubs{
  background-color:lime;
  margin: auto;
-  width: 15%;
+  width: 18%;
   border: 3px solid green;
   border-radius: 10px;
   padding: 10px;
@@ -126,6 +126,21 @@ text-align: center;
 .top-clubs:hover{
     background-color: mediumslateblue;
     width: 300px;
+}
+/* partners style  */
+.partner-text{
+    color: #2b2929;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+
+}
+.partner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 60px;
+    padding-right: 60px;
+
 }
 
 /* -----------------
